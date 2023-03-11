@@ -1,4 +1,4 @@
-@import url('https://fonts.google.com/specimen/Overpass');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400&display=swap');
 :root {
     --White: hsl(0, 0%, 100%);
     --LightGrey: hsl(217, 12%, 63%);
@@ -6,16 +6,13 @@
     --DarkBlue: hsl(213, 19%, 18%);
     --VeryDarkBlue: hsl(216, 12%, 8%);
     --Orange: hsl(25, 97%, 53%);
-    --font: Overpass,Sans-serif;
+    --font: 'Overpass',Sans-serif;
 }
-
-
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Outfit', arial;
 }
 
 body{
@@ -29,41 +26,36 @@ body{
     font-size: 14px;
 }
 
-section{
-    margin-bottom: 50px;
-}
-
+/* Card container styles */
 .container{
-    width: 20rem;
+    width: 350px;
     background-color: var(--DarkBlue);
-    margin: 20px;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
+/* svg styles */
 .svgContainer {
     border-radius: 10px;
     background-color: var(--MediumGrey);
     padding: 2px;
     display: inline-block;
     border-radius: 50%;
+    margin: 10px 0;
   }
   
-svg {
+svg{
     width: 17px; 
     height: 16px;  
     margin: 10px;  
 }
 
-.text{
-    
-}
-
+/* card info text styles */
 
 .text h1{
     font-family: var(--font);
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 400;
     text-align: left;
     font-weight: 700;
     margin: 10px 0;
@@ -71,43 +63,73 @@ svg {
 }
 
 .text p {
-    font-size: 14px;
-    margin: 5px 0;
+    font-size: 15px;
+    font-weight: 700;
     color: var(--LightGrey);
+    margin-bottom: 10px;
 }
 
-.rates{
-    display: flex; justify-content: center; width: 100%;
+
+/* Buttons Styles */
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+.rates-btn{
+    display: flex; 
+    justify-content: center; 
+    width: 100%;
 }
 
 .round{
     color: var(--White);
     background-color: var(--MediumGrey);
-    border-radius: 50%; width: 10%; 
-    height: 50px; 
+    border-radius: 50%;
+    font-family: var(--font);
+    font-weight: 700;
+    width: 20%;
+    height: 50px;
     margin-right: 2%;
-    border:none;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
-.submitBtn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+.round:last-child {
+    margin-right: 0;
+  }
+  
+  .round:hover {
+    background-color:var(--LightGrey);
+  }
 
-.counter-display {
-     background-color: rgb(15, 24, 66);
-}
-.submit{
-    margin: 20px;
+#submit{
+    margin: 20px 0;
     color: var(--White);
     background-color: var(--Orange);
-    width: 90%;
+    width: 95%;
     padding: 10px 20px;
-    border:none;
+    border:none ;
+    outline: none;
     border-radius: 50px 50px ;
     text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    font-family: var(--font);
+    letter-spacing: 3px;
 }
+
+#submit:hover {
+    background-color:var(--White);
+    color: var(--Orange);
+  }
 
 
 
