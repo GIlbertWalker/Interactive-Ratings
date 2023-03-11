@@ -33,7 +33,7 @@ body{
 
 /* Card container styles */
 .Container{
-    width: 21.875rem;
+    width: 23.1625rem;
     background-color: var(--DarkBlue);
     padding: 0.625rem;
     border-radius: 1.25rem;
@@ -42,11 +42,11 @@ body{
 .Container-2{
     display: none;
     text-align: center;
-    width: 21.875rem;
+    width: 23.1625rem;
     background-color: var(--DarkBlue);
     padding: 0.625rem;
     border-radius: 1.25rem;
-    margin: 5px;
+    margin: 0.3125rem;
 }
 
 
@@ -59,11 +59,12 @@ body{
     border-radius: 50%;
     margin: 0.625rem 0;
   } 
-svg{
-    width: 1.0625rem; 
-    height: 1rem;  
+.svgContainer img{
+    width: 17px; 
+    height: 16px;  
     margin: 0.625rem;  
 }
+
 .svgContainer2{
     width:162;
     height:108;
@@ -73,12 +74,11 @@ svg{
 /* card info text styles */
 
 .Card{
-    margin: 12px 12px 0 12px;
+    margin: 0.75rem 0.75rem 0 0.75rem;
 }
 .Card h1,h2{
     font-family: var(--font);
-    font-size: 1.5625rem;
-    font-weight: 400;
+    font-size: 26px;
     text-align: left;
     font-weight: 700;
     margin: 0.625rem 0;
@@ -88,7 +88,7 @@ svg{
     text-align: center;
 }
 .Card p {
-    font-size: 15px;
+    font-size: 0.9375rem;
     line-height: 1.25rem;
     font-weight: 700;
     color: var(--LightGrey);
@@ -96,7 +96,7 @@ svg{
 }
 
 .Card > .paragraph{
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
 }
 
 
