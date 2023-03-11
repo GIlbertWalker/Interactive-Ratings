@@ -40,7 +40,7 @@ body{
     margin: 5px;
 }
 .Container-2{
-    display: noe;
+    display: none;
     text-align: center;
     width: 21.875rem;
     background-color: var(--DarkBlue);
