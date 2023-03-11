@@ -9,7 +9,7 @@ buttons.forEach((button) => {
   button.addEventListener('click', (event) => {
     const clickedButton = event.target;
     const rating = clickedButton.dataset.value;
-
+    // display rate value in span
     selectedRound.innerHTML = rating;
     
     // remove active class from all buttons

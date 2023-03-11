@@ -134,7 +134,7 @@ body{
 .round:hover{
     background-color:var(--Orange);
 }
-.round:active{
+.round.active{
     background-color:var(--LightGrey);
 }
 
